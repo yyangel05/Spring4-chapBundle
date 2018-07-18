@@ -19,7 +19,7 @@
 
 <ul>
 	<c:forEach var="event" items="${recEventList}">
-	<li><a href="/spring4-chap07/event/detail?id=${event.id }">${event.name}</a></li>
+	<li><a href="/yytest/event/detail?id=${event.id }">${event.name}</a></li>
 	</c:forEach>
 </ul>
 

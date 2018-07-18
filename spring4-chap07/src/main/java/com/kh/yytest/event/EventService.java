@@ -23,7 +23,7 @@ public class EventService {
 		return eventMap.get(eventId);
 	}
 	
-	public List<Event>  getRecommendedEventService() {
+	public List<Event> getRecommendedEventService() {
 		List<Event> recommendList = new ArrayList<Event>();
 		recommendList.add(eventMap.get(1L));
 		return recommendList;
@@ -31,13 +31,13 @@ public class EventService {
 	
 	public List<Event> getOpenedEventList(SearchOption option) {
 		List<Event> result = new ArrayList<Event>();
-		for(Event event : eventMap.values()) {
-			if(option.isAllType()) {
+		for (Event event : eventMap.values()) {
+			if (option.isAllType()) { //전체로 선택되어있다면 
 				result.add(event);
-			}
-			else {
-				for(EventType type : option.getTypes()) {
-					if(type == event.getType()) {
+			} 
+			else { //타입이 선택되어있다면
+				for (EventType type : option.getTypes()) { 
+					if (type == event.getType()) {
 						result.add(event);
 						break;
 					}

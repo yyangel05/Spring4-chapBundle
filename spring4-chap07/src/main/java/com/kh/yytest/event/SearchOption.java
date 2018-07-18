@@ -6,7 +6,7 @@ import java.util.Date;
 public class SearchOption {
 	
 	private Collection<EventType> types;
-	private boolean allType ;
+	private boolean allType;
 	private Date from;
 	private Date to;
 	
@@ -18,7 +18,7 @@ public class SearchOption {
 		this.types = types;
 	}
 	public boolean isAllType() {
-		return allType;
+		return allType || types == null;
 	}
 	public void setAllType(boolean allType) {
 		this.allType = allType;

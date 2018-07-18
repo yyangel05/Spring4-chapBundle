@@ -11,7 +11,7 @@
 <form>
 <label><input type="checkbox" name="allType" value="true">전체</label>
 <c:forEach var="eventType" items="${eventTypes}">
-<label><input type="checkbox" name="types"  value="${eventType}">${eventType}</label>
+<label><input type="checkbox" name="types" value="${eventType}">${eventType}</label>
 </c:forEach>
 
 시작일 : <input type="text" name="from"/> ~ <input type="text" name="to"/>
@@ -23,7 +23,7 @@
 
 <ul>
 	<c:forEach var="event" items="${eventList}">
-	<li><a href="/spring4-chap07/event/detail?id=${event.id }">${event.name [${event.type}]</a></li>
+	<li><a href="/yytest/event/detail?id=${event.id }">${event.name} [${event.type}]</a></li>
 	</c:forEach>
 </ul>
 
@@ -31,7 +31,7 @@
 
 <ul>
 	<c:forEach var="event" items="${recEventList}">
-	<li><a href="/spring4-chap07/event/detail?id=${event.id }">${event.name}</a></li>
+	<li><a href="/yytest/event/detail?id=${event.id }">${event.name}</a></li>
 	</c:forEach>
 </ul>
 

@@ -18,6 +18,7 @@ public class EventCreationController {
 	private static final String EVENT_CREATION_STEP3 = "event/creationStep3";
 	private static final String EVENT_CREATION_DONE = "event/creationDone";
 	
+	
 	@ModelAttribute("eventForm")
 	public EventForm formData() {
 		return new EventForm();

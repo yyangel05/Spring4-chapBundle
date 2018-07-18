@@ -5,15 +5,15 @@ import java.util.Date;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class EventForm {
-	
+
 	private String name;
 	private EventType type;
-	
+
 	@DateTimeFormat(pattern = "yyyyMMdd")
 	private Date beginDate;
 	@DateTimeFormat(pattern = "yyyyMMdd")
 	private Date endDate;
-	
+
 	private String target;
 
 	public String getName() {
@@ -70,5 +70,5 @@ public class EventForm {
 		}
 		return false;
 	}
-	
+
 }
