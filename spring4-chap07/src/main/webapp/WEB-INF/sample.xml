@@ -49,10 +49,13 @@
 	
 	<bean class="com.kh.yytest.exhandler.CommonExceptionHandler"/>
 	
+	<bean class="com.kh.yytest.file.FileController"/>
+	
+	
  	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">
 			<list>
-				<value>massages.error</value>
+				<value>massage.error</value>
 			</list>
 		</property>
 		
